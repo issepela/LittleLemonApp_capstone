@@ -12,7 +12,7 @@ const Stack = createNativeStackNavigator();
 
 function RootStack({ isOnboardingComplete }) {
   return (
-    <Stack.Navigator initialRouteName={isOnboardingComplete ? 'Profile' : 'Onboarding'}>
+    <Stack.Navigator initialRouteName={isOnboardingComplete ? 'Home' : 'Onboarding'}>
         <Stack.Screen name="Onboarding" component={Onboarding} options={{ headerShown: false }} />
         <Stack.Screen name="Home" component={Home} options={{ headerShown: false }}/>
         <Stack.Screen name="Profile" component={Profile} options={{ headerShown: false }}/>
